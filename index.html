@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head> 
+<body>
+
+<div class="intro-screen">
+        <img src="img/logo1.png" alt="Logo" class="intro-logo">
+    <h1 class="intro-title">WELCOME</h1>
+</div>
+
+<div class="film-transition"></div>
+
+<div class="cursor-light"></div>
+
+<header>
+    <a href="#home" class="logo">
+        <img src="img/logo.png" alt="Logo" class="logo-img">
+    </a>
+    <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<section id="home" class="home">
+
+    <div class="home-text">
+        <h1 class="typing">Gaea Angeline Shey J. Sta. Rita</h1>
+        <h3 class="home-role">
+Computer Science Student • Aspiring IT Professional
+</h3>
+
+<p class="home-desc">
+Motivated and detail-oriented student with a growing foundation in technology, 
+creative design, and digital tools. Passionate about supporting efficient 
+workflows and solving technical problems in a professional environment.
+</p>
+</div> 
+</div>
+
+    <div class="home-img">
+        <img src="img/prof2.jpeg" alt="Profile Image">
+    </div>
+</section>
+
+<section id="about" class="about reveal">
+    <div class="about-img">
+        <img src="img/film2.jpg" alt="About Image">
+    </div>
+    <div class="about-text">
+    <h2>About Me</h2>
+
+    <p>
+        I am a Computer Science student with a strong interest in technology, digital design, and practical problem-solving. I have experience in creative work such as photography and visual design, as well as hands-on tasks during my internship where I assisted with technical support and basic equipment maintenance.
+    </p>
+
+    <p>
+        I am adaptable, responsible, and committed to continuous learning. My goal is to build a career in IT and office-based roles where I can contribute to daily operations while developing my technical and professional skills.
+    </p>
+</div>
+
+    </div>
+</section>
+
+<section id="skills" class="skills reveal">
+
+    <h2 class="section-title">Skills</h2>
+
+    <p class="skills-intro">
+        A balanced mix of creative and interpersonal strengths that support efficiency, adaptability, 
+        and collaboration in academic and real-world environments.
+    </p>
+
+    <div class="skills-grid-2col">
+
+        <div class="skills-col">
+
+            <div class="skill">
+                <p>Creative Design (Canva)</p>
+                <span class="percent" data-target="85">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>Photography & Visual Composition</p>
+                <span class="percent" data-target="80">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>DIY Craft Development</p>
+                <span class="percent" data-target="88">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+        </div>
+
+        <div class="skills-col">
+
+            <div class="skill">
+                <p>Time Management</p>
+                <span class="percent" data-target="85">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>Team Collaboration</p>
+                <span class="percent" data-target="86">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>Problem Solving</p>
+                <span class="percent" data-target="80">0%</span>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="internship" class="internship reveal">
+
+    <h2 class="section-title">Internship Experience</h2>
+
+    <p class="intern-intro">
+        Practical training experience in a professional environment involving real tasks and workplace exposure.
+    </p>
+
+    <div class="intern-container">
+
+        <div class="intern-card">
+
+            <h3>Internship Trainee</h3>
+            <p class="company">XD WONDERTECH COMPUTER SALES & SERVICES</p>
+
+            <p class="duration">February 2026 – Present</p>
+
+            <span class="status">Ongoing</span>
+
+           <div class="intern-text">
+
+<p>
+Currently undergoing internship training where I assist in basic technical support, equipment setup, and maintenance tasks. I help ensure that devices and workstations function properly while supporting daily operational needs.
+</p>
+
+<p>
+This experience allows me to develop practical skills in troubleshooting, organization, and teamwork within a professional environment.
+</p>
+
+</div>
+
+<div class="tags">
+    <span>Technical Assistance</span>
+    <span>Equipment Setup</span>
+    <span>Basic Troubleshooting</span>
+    <span>Workplace Support</span>
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="portfolio" class="portfolio reveal">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="portfolio-filter">
+  <button class="btn active" onclick="filterSelection('all', event)">All</button>
+<button class="btn" onclick="filterSelection('diy', event)">Creative Projects</button>
+<button class="btn" onclick="filterSelection('photography', event)">Photography</button>
+<button class="btn" onclick="filterSelection('canva', event)">Design Work</button>
+<button class="btn" onclick="filterSelection('internship', event)">Work Experience</button>
+</div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item diy show">
+            <img src="img/d1.jpg" alt="DIY Paper Craft 1" data-caption="DIY Craft 1">
+        </div>
+        <div class="portfolio-item diy show">
+            <img src="img/d2.jpg" alt="DIY Paper Craft 2" data-caption="DIY Craft 2">
+        </div>
+        <div class="portfolio-item diy show">
+            <img src="img/d3.jpg" alt="DIY Paper Craft 3" data-caption="DIY Craft 3">
+        </div>
+        <div class="portfolio-item diy show">
+            <img src="img/d4.jpg" alt="DIY Paper Craft 4" data-caption="DIY Craft 4">
+        </div>
+
+        <div class="portfolio-item photography show">
+            <img src="img/pic1.jpg" alt="Photography 1" data-caption="Photography 1">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic2.jpg" alt="Photography 2" data-caption="Photography 2">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic3.jpg" alt="Photography 3" data-caption="Photography 3">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic4.jpg" alt="Photography 4" data-caption="Photography 4">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic5.jpg" alt="Photography 5" data-caption="Photography 5">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic6.jpg" alt="Photography 5" data-caption="Photography 6">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic7.jpg" alt="Photography 5" data-caption="Photography 7">
+        </div>
+        <div class="portfolio-item photography show">
+            <img src="img/pic8.jpg" alt="Photography 5" data-caption="Photography 8">
+        </div>
+
+        <div class="portfolio-item canva show">
+            <img src="img/ca1.png" alt="Canva Design 1" data-caption="Canva Design 1">
+        </div>
+        <div class="portfolio-item canva show">
+            <img src="img/ca2.png" alt="Canva Design 2" data-caption="Canva Design 2">
+        </div>
+        <div class="portfolio-item canva show">
+            <img src="img/ca3.png" alt="Canva Design 3" data-caption="Canva Design 3">
+        </div>
+        <div class="portfolio-item canva show">
+            <img src="img/ca4.png" alt="Canva Design 4" data-caption="Canva Design 4">
+        </div>
+
+     <div class="portfolio-item internship show">
+            <img src="img/i1.jpg" alt="Printer Maintenance" data-caption="Printer Maintenance">
+        </div>
+
+        <div class="portfolio-item internship show">
+            <img src="img/i2.jpg" alt="Laptop Setup and Configuration" data-caption="Laptop Setup and Configuration">
+        </div>
+
+        <div class="portfolio-item internship show">
+            <img src="img/i3.jpg" alt="Cable Repair and Connection" data-caption="Cable Repair and Connection">
+        </div>
+
+        <div class="portfolio-item internship show">
+            <img src="img/i4.jpg" alt="Gaming Chair Assembly" data-caption="Gaming Chair Assembly">
+        </div>
+</section>
+
+<section id="certifications" class="certifications reveal">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+        <div class="cert"><img src="img/c1.jpg" alt="Certificate of Completion"><p>Certificate of Completion</p></div>
+        <div class="cert"><img src="img/c2.jpg" alt="Best Research Poster"><p>Best Research Poster</p></div>
+        <div class="cert"><img src="img/c3.jpg" alt="Certificate of Recognition"><p>Certificate of Recognition</p></div>
+    </div>
+</section>
+
+<section id="contact" class="contact reveal">
+
+    <h2 class="section-title">Contact</h2>
+
+    <p class="contact-intro">
+        Open to opportunities, collaborations, and professional inquiries.
+    </p>
+
+    <div class="contact-card">
+
+        <div class="contact-item">
+            <span class="label">Email</span>
+            <p>
+                <a href="mailto:sheeshright@gmail.com">
+                    angelinagaea@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <span class="label">Phone</span>
+           <p>
+    <a href="tel:+639472051178">
+        +63 947 205 1178
+    </a>
+</p>
+        </div>
+
+    </div>
+
+<div class="contact-socials">
+    <a href="https://facebook.com/sheystarita" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://github.com/QsheesshQ" target="_blank" class="social-btn github">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://instagram.com/heyu_gaea" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+<p class="cv-note">
+    You may view my Curriculum Vitae for a detailed overview of my qualifications, experience, and skills.
+</p>
+
+<button class="btn" onclick="openCurriculumVitae()">
+    View Curriculum Vitae
+</button>
+
+    <div class="CurriculumVitae-modal" id="CurriculumVitaeModal">
+        <div class="CurriculumVitae-wrapper">
+
+            <span class="close" onclick="closeCurriculumVitae()">&times;</span>
+
+            <div class="CurriculumVitae-container">
+                <embed src="cv/CURRICULUM VITAE.pdf" type="application/pdf">
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+    <div class="CurriculumVitae-modal" id="CurriculumVitaeModal">
+        <div class="CurriculumVitae-wrapper">
+
+            <span class="close" onclick="closeCurriculumVitae()">&times;</span>
+
+            <div class="CurriculumVitae-container">
+                <embed src="cv/CURRICULUM VITAE.pdf" type="application/pdf">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="" alt="">
+    <div class="modal-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
