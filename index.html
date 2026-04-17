@@ -261,10 +261,22 @@ This experience allows me to develop practical skills in troubleshooting, organi
 
 <section id="certifications" class="certifications reveal">
     <h2 class="section-title">Certifications</h2>
+
     <div class="cert-grid">
-        <div class="cert"><img src="img/c1.jpg" alt="Certificate of Completion"><p>Certificate of Completion</p></div>
-        <div class="cert"><img src="img/c2.jpg" alt="Best Research Poster"><p>Best Research Poster</p></div>
-        <div class="cert"><img src="img/c3.jpg" alt="Certificate of Recognition"><p>Certificate of Recognition</p></div>
+        <div class="cert">
+            <img src="img/c1.jpg" alt="Certificate of Completion" onclick="openCert(this)">
+            <p>Certificate of Completion</p>
+        </div>
+
+        <div class="cert">
+            <img src="img/c2.jpg" alt="Best Research Poster" onclick="openCert(this)">
+            <p>Best Research Poster</p>
+        </div>
+
+        <div class="cert">
+            <img src="img/c3.jpg" alt="Certificate of Recognition" onclick="openCert(this)">
+            <p>Certificate of Recognition</p>
+        </div>
     </div>
 </section>
 
@@ -324,9 +336,9 @@ This experience allows me to develop practical skills in troubleshooting, organi
     <div class="CurriculumVitae-wrapper">
 
         <span class="close" onclick="closeCurriculumVitae()">&times;</span>
-<div class="CurriculumVitae-container">
 
-    <iframe src="cv/cv.pdf" style="width:100%; height:80vh;"></iframe>
+             <div class="CurriculumVitae-container">
+    <iframe src="cv/cv.pdf" ></iframe>
 </div>
 
         </div>
@@ -341,6 +353,12 @@ This experience allows me to develop practical skills in troubleshooting, organi
     <div class="modal-caption"></div>
 </div>
 
+         <div class="cert-modal" id="certModal">
+    <span class="cert-close" onclick="closeCert()">&times;</span>
+    <img id="certPreview">
+</div>
+         
 <script src="script.js"></script>
+         
 </body>
 </html>
