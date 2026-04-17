@@ -764,3 +764,37 @@ img {
     text-decoration: none;
     margin-top: 10px;
 }
+.cert-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.cert-modal.active {
+    display: flex;
+}
+
+#certPreview {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 12px;
+
+    /* 🔥 glowing effect same as CV */
+    box-shadow:
+        0 0 20px cyan,
+        0 0 50px rgba(0,255,255,0.3),
+        0 0 80px rgba(0,255,255,0.15);
+}
+
+.cert-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
