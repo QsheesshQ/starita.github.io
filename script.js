@@ -219,3 +219,16 @@ function toggleMenu() {
         nav.classList.toggle("active");
     }
 }
+function openCert(img) {
+    const modal = document.getElementById("certModal");
+    const preview = document.getElementById("certPreview");
+
+    preview.src = img.src;
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closeCert() {
+    document.getElementById("certModal").classList.remove("active");
+    document.body.style.overflow = "auto";
+}
